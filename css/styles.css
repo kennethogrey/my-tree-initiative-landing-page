@@ -62,7 +62,7 @@ section{
 
 /* BUTTONS ------------------------------------------- */
 .btn {
-    padding: 9px 24px;
+    padding: 5px 10px;
 }
 
 .btn-brand {
@@ -76,6 +76,19 @@ section{
 .btn-brand:hover {
     color: var(--white1);
     background-color: var(--color2);
+}
+
+.btn-brand-2 {
+    background-color: #307be6;
+    color: var(--white2);
+    border-color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-brand-2:hover {
+    color: var(--white1);
+    background-color: #00880F;
 }
 
 
@@ -121,11 +134,18 @@ section{
         box-shadow: var(--boxShadow1);
 
     }
+.img-logo {
+    max-height: 80px;
+    width: auto;
+    margin-right: 10px;
+}
 
     .navbar-brand {
         font-weight: 700;
         font-size: 2rem;
         color: var(--dark1);
+        display: flex;
+        align-items: center;
     }
 
     .navbar-brand span{
@@ -140,7 +160,7 @@ section{
 
     /* HERO SLIDER ---------------------------------------------- */
     .slide1{
-        background: linear-gradient(rgba(0, 0, 0,0.7), rgba(0, 0, 0, 0.7)),url('https://images.pexels.com/photos/1004542/pexels-photo-1004542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background: linear-gradient(rgba(0, 0, 0,0.7), rgba(0, 0, 0, 0.9)),url('/images/carousel2.png');
     }
     .slide1 h1, .slide2 h1{
         font-size: 50px;
@@ -154,12 +174,13 @@ section{
     }
 
     .slide2{
-        background: linear-gradient(rgba(0, 0, 0,0.7), rgba(0, 0, 0, 0.7)),url('https://images.pexels.com/photos/6011465/pexels-photo-6011465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background: linear-gradient(rgba(0, 0, 0,0.7), rgba(0, 0, 0, 0.9)),url('/images/carousel1.jpg');
     }
 
 .my-10-increased {
     margin-bottom: 30px; /* You can adjust this value as needed */
 }
+
 
     /* OWL CAROUSEL --------------------------------------------- */
     .owl-prev, .owl-next {
@@ -247,7 +268,7 @@ section{
     }
 
     .about-h5{
-        color: var(--color2);
+        color: black;
     }
     /* MILESTONES --------------------------------------------- */
     #milestones {
@@ -279,9 +300,9 @@ section{
         margin: 6px 0 3px;
     }
 
-    .service-icon {
-        font-size: 2rem;
-        color: var(--color2);
+    .service-icon img{
+        width: 100px;
+        height: 100px;
     }
 
     /* PORTFOLIO ---------------------------------------------- */
@@ -295,7 +316,7 @@ section{
         background: linear-gradient(to bottom, rgba(31, 30, 30,0.0), rgba(31, 30, 30, 0.8));
         position: absolute;
         width: 100%;
-        height: 240px;
+        height: 150px;
         bottom: 0;
         left: 0;
     }
@@ -335,19 +356,24 @@ section{
     overflow: hidden;
 }
 
+.team-member .img-wrapper .img{
+    width: 100%;
+    height: 300px;
+}
+
 .team-member .overlay{
     position: absolute;
     top: -10%;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 153, 153, 0.89);
+    background-color: #00880F;
     transition: all 0.4s ease;
     opacity: 0;
 }
 
 .team-member:hover .overlay{
-    opacity: 1;
+    opacity: 0.8;
     top: 0;
 }
 
@@ -381,6 +407,14 @@ section{
 .team-member .team-social-links a:hover{
     color: var(--color1);
     background-color: var(--white2);
+}
+
+
+.team-member .team-social-links .card{
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: white;
 }
 
 .team-member h5 {
@@ -499,6 +533,9 @@ section{
 .card-transparent {
     background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value for transparency */
     color: #fff; /* Text color for better visibility */
+    max-height: 400px; /* Set your desired fixed height here */
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -520,7 +557,7 @@ section{
     color: #00880F !important; /* Set the text color to blue */
 }
 #impact {
-    background: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.692)),url('https://images.pexels.com/photos/4261750/pexels-photo-4261750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.692)),url('/images/impact-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -592,9 +629,10 @@ section{
 .left {
     background: #00880F;
     padding: 200px 98px;
+    color: white;
 }
 .left h2 {
-    font-family: poppins;
+    font-family: Poppins, sans-serif;
     color: #fff;
     font-weight: 700;
     font-size: 48px;
@@ -674,6 +712,31 @@ section{
 .footer-bg .container p{
     color: white;
 }
+
+
+.custom-margin{
+    margin-bottom: 52px;
+}
+
+
+.friend-card{
+    border: 0;
+    padding: 1rem;
+}
+
+.col-img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 
 
 
